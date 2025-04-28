@@ -9,8 +9,8 @@ Create and activate a virtual environment (optional but recommended):
 - python3 -m venv venv
 - source venv/bin/activate
 
-Install dependencies (none external by default):
-- pip install -r requirements.txt  # if you add dependencies
+Install dependencies 
+- pip install -r requirements.txt 
 
 Project Structure
 
