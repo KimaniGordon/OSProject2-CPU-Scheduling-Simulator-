@@ -2,18 +2,15 @@
  A Python project that implements and compares three CPU scheduling algorithms (FCFS, HRRN, SRTF). This repository includes:  Core modules for process representation and metrics computation  Scheduler implementations in core/schedulers/  A main script to run and compare algorithms
  
 Installation
-
-git clone https://github.com/<username>/OSProject2.git
+git clone https://github.com/KimaniGordon/OSProject2.git
 cd OSProject2
 
 Create and activate a virtual environment (optional but recommended):
-
-python3 -m venv venv
-source venv/bin/activate
+- python3 -m venv venv
+- source venv/bin/activate
 
 Install dependencies (none external by default):
-
-pip install -r requirements.txt  # if you add dependencies
+- pip install -r requirements.txt  # if you add dependencies
 
 Project Structure
 
@@ -32,11 +29,22 @@ OSProject2/
         ├── hrrn_scheduler.py
         └── srtf_scheduler.py
 
+
+
+
+.gitignore
+venv/
+__pycache__/
+*.pyc
+
 Usage
 
-Run the main comparison script from the project root:
+- Run the main comparison script from the project root:
+- python3 -m core.main
+- This will execute FCFS, HRRN, and SRTF schedulers on a predefined test set and print metrics and a comparison table.
 
-python3 -m core.main
+This project is licensed under the MIT License.
 
-This will execute FCFS, HRRN, and SRTF schedulers on a predefined test set and print metrics and a comparison table.
+References
+- `tabulate` library from [PyPI Tabulate](https://pypi.org/project/tabulate/)
 
